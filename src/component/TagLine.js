@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Collapse, Container, Grid, IconButton, Box } from "@material-ui/core";
-import { ExpandMore } from "@material-ui/icons";
+import { Collapse, IconButton } from "@material-ui/core";
+import DetailsRoundedIcon from "@material-ui/icons/DetailsRounded";
 import { Link as Scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    fontFamily: "'Open Sans', sans-serif;",
+    fontFamily: "'Poppins', sans-serif;",
     height: "100vh",
     fontSize: "2rem",
   },
@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
   goDown: {
     color: "#F87B03",
     fontSize: "4rem",
+    "&:hover": {
+      color: "#FFFFFF",
+    },
   },
 }));
 
@@ -49,8 +52,8 @@ export default function TagLine() {
             YOUR TOYS
           </h1>
           <Scroll to="place-to-visit" smooth="true">
-            <IconButton elevation={3}>
-              <ExpandMore className={classes.goDown} />
+            <IconButton>
+              <DetailsRoundedIcon className={classes.goDown} />
             </IconButton>
           </Scroll>
         </div>

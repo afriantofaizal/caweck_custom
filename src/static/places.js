@@ -1,31 +1,47 @@
 const places = [
   {
     title: "Image 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageUrl: process.env.PUBLIC_URL + "/assets/image1.jpg",
-    time: 1500,
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image1.png",
+    time: 1000,
   },
   {
     title: "Image 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageUrl: process.env.PUBLIC_URL + "/assets/image1.jpg",
-    time: 1500,
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image2.png",
+    time: 2000,
   },
   {
     title: "Image 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageUrl: process.env.PUBLIC_URL + "/assets/image1.jpg",
-    time: 1500,
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image3.png",
+    time: 3000,
   },
   {
     title: "Image 4",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageUrl: process.env.PUBLIC_URL + "/assets/image1.jpg",
-    time: 1500,
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image4.png",
+    time: 4000,
+  },
+  {
+    title: "Image 5",
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image5.png",
+  },
+  {
+    title: "Image 6",
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image6.png",
+  },
+  {
+    title: "Image 7",
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image7.png",
+  },
+  {
+    title: "Image 8",
+    description: "Get this outfit only at caweck custom",
+    imageUrl: process.env.PUBLIC_URL + "/assets/image8.png",
   },
 ];
 

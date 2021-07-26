@@ -9,17 +9,23 @@ import { Collapse } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     maxWidth: "100%",
-    margin: "18px",
+    margin: "20px",
+    borderRadius: "0",
+    boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
+    "&:hover": {
+      boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
+    },
   },
   media: {
-    height: 210,
+    height: 280,
   },
   title: {
-    fontFamily: "'Open Sans', sans-serif;",
-    fontWeight: 700,
+    fontFamily: "'Poppins', sans-serif;",
+    fontWeight: 600,
   },
   desc: {
-    fontFamily: "'Open Sans', sans-serif;",
+    fontFamily: "'Poppins', sans-serif;",
+    fontWeight: 400,
   },
 });
 
@@ -27,13 +33,13 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
+    <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
       <Card className={classes.root}>
         <CardMedia className={classes.media} image={place.imageUrl} />
         <CardContent>
           <Typography
             gutterBottom
-            variant="h5"
+            variant="h6"
             component="h2"
             className={classes.title}
           >

@@ -4,7 +4,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { IconButton } from "@material-ui/core";
-import SortIcon from "@material-ui/icons/Sort";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import logo from "../images/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,27 +17,41 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0, 0, 0, 0)",
   },
   appBarSolid: {
-    backgroundColor: "rgba(0, 0, 0)",
+    backgroundColor: "#121212",
   },
   navBar: {
     background: "none",
   },
   appbarWrapper: {
-    width: "90%",
+    width: "86%",
     margin: "0 auto",
   },
   appbarTitle: {
     flexGrow: "1",
-    fontFamily: "'Open Sans', sans-serif;",
+    fontFamily: "'Poppins', sans-serif;",
     fontWeight: 800,
-    color: "#F87B03",
   },
-  iconMenu: {
+  logo: {
+    paddingTop: theme.spacing(1),
+  },
+
+  instagram: {
     color: "#fff",
-    fontSize: "2rem",
+    "&:hover": {
+      color: "#C03E7A",
+    },
   },
-  colorText: {
-    color: "#6F35F1",
+  facebook: {
+    color: "#fff",
+    "&:hover": {
+      color: "#3B5998",
+    },
+  },
+  twitter: {
+    color: "#fff",
+    "&:hover": {
+      color: "#00ACEE",
+    },
   },
 }));
 
@@ -69,10 +86,37 @@ export default function Header() {
       >
         <Toolbar className={classes.appbarWrapper}>
           <Typography variant="h5" className={classes.appbarTitle}>
-            <span className={classes.colorText}>Caweck</span>custom
+            <img src={logo} alt="Caweck Custom" className={classes.logo} />
           </Typography>
           <IconButton>
-            <SortIcon className={classes.iconMenu} />
+            <a
+              className={classes.instagram}
+              href="https://www.instagram.com/caweck_custom/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              className={classes.facebook}
+              href="https://www.instagram.com/caweck_custom/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              className={classes.twitter}
+              href="https://twitter.com/vikivikicaw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TwitterIcon />
+            </a>
           </IconButton>
         </Toolbar>
       </AppBar>

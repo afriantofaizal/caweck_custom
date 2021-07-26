@@ -4,7 +4,8 @@ import { CssBaseline } from "@material-ui/core";
 import Header from "./component/Header";
 import TagLine from "./component/TagLine";
 import PlaceToVisit from "./component/PlaceToVisit";
-import SocialMedia from "./component/SocialMedia";
+import Footer from "./component/Footer";
+// import SocialMedia from "./component/SocialMedia";
 
 const useStyles = makeStyles((theme) => ({
   hero: {
@@ -15,13 +16,16 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     position: "relative",
   },
+  root: {
+    background: "#F7F9FC",
+  },
 }));
 
 function App() {
   const classes = useStyles();
 
   return (
-    <div className="App">
+    <div className={classes.root}>
       <div className={classes.hero}>
         <CssBaseline />
         <Header />
@@ -30,6 +34,7 @@ function App() {
       </div>
 
       <PlaceToVisit />
+      <Footer />
     </div>
   );
 }
