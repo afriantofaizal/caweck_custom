@@ -2,8 +2,12 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import Statistic from "./PlaceStatistic";
+import {
+  Grid,
+  Card,
+  CardContent,
+  Typography
+} from '@material-ui/core'
 import StatisticContent from "../static/StatisticContent";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,26 +31,50 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
+  card: {
+    maxWidth: "100%",
+    margin: "20px",
+    borderRadius: "0",
+    boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
+    "&:hover": {
+      boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
+    },
+  }
 }));
 
 export default function PlaceStatistic() {
   const classes = useStyles();
-
+  console.log(StatisticContent)
   return (
     <React.Fragment>
       <CssBaseline />
       <div className={classes.root}>
         <Paper elevation={0}>
           <Grid container spacing={3} className={classes.container}>
-            <Grid item xs={12} sm={12} md={3}>
-              <Statistic place={StatisticContent[0]} />
-            </Grid>
-            <Grid item xs={12} sm={12} md={3}>
-              <Statistic place={StatisticContent[1]} />
-            </Grid>
-            <Grid item xs={12} sm={12} md={3}>
-              <Statistic place={StatisticContent[2]} />
-            </Grid>
+            {StatisticContent.map(item =>
+              <Grid item xs={12} sm={12} md={3}>
+                <Card className={classes.card}>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      component="h2"
+                      className={classes.title}
+                    >
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                      className={classes.desc}
+                    >
+                      {item.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            )}
           </Grid>
         </Paper>
       </div>
