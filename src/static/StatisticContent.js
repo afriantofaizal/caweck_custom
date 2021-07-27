@@ -1,15 +1,21 @@
 const StatisticContent = [
   {
-    title: "Statistic 1",
-    description: "StatisticDescription",
+    title: "CUSTOM KITBASH",
+    description:
+      "Custom kitbash anything you want. Get this outfit only at caweck custom",
+    iconUrl: process.env.PUBLIC_URL + "/assets/shirt.png",
   },
   {
-    title: "Statistic 2",
-    description: "StatisticDescription",
+    title: "1.000+ ORDERS",
+    description:
+      "Received orders more than 1.000. Get this outfit only at caweck custom",
+    iconUrl: process.env.PUBLIC_URL + "/assets/shopping-bag.png",
   },
   {
-    title: "Statistic 3",
-    description: "StatisticDescription",
+    title: "DELIVER TO ANYWHERE",
+    description:
+      "Deliver to anywhere you are. Get this outfit only at caweck custom",
+    iconUrl: process.env.PUBLIC_URL + "/assets/delivered.png",
   },
 ];
 

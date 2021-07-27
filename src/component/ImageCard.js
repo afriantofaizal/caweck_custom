@@ -21,11 +21,11 @@ const useStyles = makeStyles({
   },
   title: {
     fontFamily: "'Poppins', sans-serif;",
-    fontWeight: 600,
+    fontWeight: 500,
   },
   desc: {
     fontFamily: "'Poppins', sans-serif;",
-    fontWeight: 400,
+    fontWeight: 300,
   },
 });
 
@@ -46,7 +46,7 @@ export default function ImageCard({ place, checked }) {
             {place.title}
           </Typography>
           <Typography
-            variant="body2"
+            variant="body1"
             color="textSecondary"
             component="p"
             className={classes.desc}
