@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   goDown: {
-    color: "#F87B03",
+    color: "#2196F3",
     fontSize: "4rem",
     "&:hover": {
       color: "#FFFFFF",
@@ -46,13 +46,13 @@ export default function TagLine() {
         collapsedHeight={50}
       >
         <div className={classes.container}>
-          <h1 className={classes.title} id="tagline">
+          <h2 className={classes.title} id="tagline">
             CUSTOM KITBASH
             <br />
             YOUR TOYS
-          </h1>
+          </h2>
           <Scroll to="place-to-visit" smooth="true">
-            <IconButton>
+            <IconButton color="primary">
               <DetailsRoundedIcon className={classes.goDown} />
             </IconButton>
           </Scroll>

@@ -6,6 +6,7 @@ import Avatar from "@material-ui/core/Avatar";
 const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
+    margin: "40px",
   },
   title: {
     fontFamily: "'Poppins', sans-serif;",
@@ -25,7 +26,7 @@ export default function Statistic({ place }) {
   const classes = useStyles();
 
   return (
-    <Typography className={classes.root} variant="outlined">
+    <div className={classes.root} variant="outlined">
       <Avatar
         gutterBottom
         alt="icon"
@@ -49,6 +50,6 @@ export default function Statistic({ place }) {
       >
         {place.description}
       </Typography>
-    </Typography>
+    </div>
   );
 }

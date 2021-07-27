@@ -14,8 +14,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     backgroundColor: "#fff",
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
   },
   container: {
     minWidth: 230,
