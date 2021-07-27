@@ -1,4 +1,4 @@
-const places = [
+const ImageCardContent = [
   {
     title: "Image 1",
     description: "Get this outfit only at caweck custom",
@@ -45,4 +45,4 @@ const places = [
   },
 ];
 
-export default places;
+export default ImageCardContent;

@@ -3,8 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 import Header from "./component/Header";
 import TagLine from "./component/TagLine";
-import PlaceToVisit from "./component/PlaceToVisit";
+import PlaceImageCard from "./component/PlaceImageCard";
 import Footer from "./component/Footer";
+import PlaceStatistic from "./component/PlaceStatistic";
 // import SocialMedia from "./component/SocialMedia";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,7 +34,8 @@ function App() {
         <TagLine />
       </div>
 
-      <PlaceToVisit />
+      <PlaceImageCard />
+      <PlaceStatistic />
       <Footer />
     </div>
   );
