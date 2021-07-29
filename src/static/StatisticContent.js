@@ -1,6 +1,6 @@
 const StatisticContent = [
   {
-    title: "CUSTOM KITBASH",
+    title: "CUSTOM OUTFIT FIGURE",
     description:
       "Custom kitbash anything you want. Get this outfit only at caweck custom",
     iconUrl: process.env.PUBLIC_URL + "/assets/shirt.png",
@@ -12,7 +12,7 @@ const StatisticContent = [
     iconUrl: process.env.PUBLIC_URL + "/assets/shopping-bag.png",
   },
   {
-    title: "DELIVER TO ANYWHERE",
+    title: "WORLDWIDE SHIPPING",
     description:
       "Deliver to anywhere you are. Get this outfit only at caweck custom",
     iconUrl: process.env.PUBLIC_URL + "/assets/delivered.png",

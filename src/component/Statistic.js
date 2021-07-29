@@ -5,7 +5,7 @@ import Avatar from "@material-ui/core/Avatar";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minWidth: 275,
+    maxWidth: "100%",
     margin: "40px",
   },
   title: {

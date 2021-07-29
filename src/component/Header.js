@@ -28,11 +28,10 @@ const useStyles = makeStyles((theme) => ({
   },
   appbarTitle: {
     flexGrow: "1",
-    fontFamily: "'Poppins', sans-serif;",
-    fontWeight: 800,
   },
   logo: {
     paddingTop: theme.spacing(1),
+    maxWidth: 80,
   },
 
   instagram: {
@@ -85,7 +84,7 @@ export default function Header() {
         elevation={0}
       >
         <Toolbar className={classes.appbarWrapper}>
-          <Typography variant="h5" className={classes.appbarTitle}>
+          <Typography variant="h6" className={classes.appbarTitle}>
             <img src={logo} alt="Caweck Custom" className={classes.logo} />
           </Typography>
           <IconButton>

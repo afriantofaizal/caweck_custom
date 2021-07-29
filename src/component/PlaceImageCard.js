@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
     margin: "0 auto",
-    paddingTop: theme.spacing(10),
+    paddingTop: theme.spacing(12),
     paddingBottom: theme.spacing(10),
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
     },
   },
-  catalogTitle: {
+  title: {
     fontFamily: "'Poppins', sans-serif;",
     fontWeight: 400,
     paddingBottom: theme.spacing(3),
@@ -35,8 +35,8 @@ export default function PlaceImageCard() {
   return (
     <Container id="place-to-visit">
       <div className={classes.root}>
-        <Typography variant="h3" className={classes.catalogTitle}>
-          Catalog
+        <Typography variant="h3" className={classes.title}>
+          Collections
         </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>

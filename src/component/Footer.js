@@ -15,18 +15,22 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+  },
+  footer: {
     fontFamily: "'Poppins', sans-serif;",
-    fontWeight: 200,
+    fontWeight: 300,
   },
 }));
 
 export default function Footer() {
   const classes = useStyles();
   return (
-    <footer>
+    <footer position="fixed">
       <Box className={classes.root}>
         <Container>
-          <Typography>© 2021-2022 . Caweck Custom</Typography>
+          <Typography variant="h6" className={classes.footer}>
+            © 2021 - Caweck Custom
+          </Typography>
         </Container>
       </Box>
     </footer>

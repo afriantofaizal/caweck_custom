@@ -11,9 +11,11 @@ const useStyles = makeStyles({
     maxWidth: "100%",
     margin: "20px",
     borderRadius: "0",
-    boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
+    boxShadow: "0 8px 40px -12px rgba(0,0,0,0.2)",
+    transition: "0.5s",
     "&:hover": {
       boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
+      transform: "translateY(-20px)",
     },
   },
   media: {
@@ -33,9 +35,13 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 1500 } : {})}>
+    <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
       <Card className={classes.root}>
-        <CardMedia className={classes.media} image={place.imageUrl} />
+        <CardMedia
+          className={classes.media}
+          image={place.imageUrl}
+          loading="lazy"
+        />
         <CardContent>
           <Typography
             gutterBottom

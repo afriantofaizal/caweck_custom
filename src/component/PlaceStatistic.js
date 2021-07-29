@@ -13,14 +13,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+    margin: "0 auto",
     backgroundColor: "#fff",
   },
   container: {
-    minWidth: 230,
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    margin: "0 auto",
+    minWidth: 275,
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
     },
