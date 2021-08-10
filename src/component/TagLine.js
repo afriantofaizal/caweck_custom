@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     color: "#fff",
     fontFamily: "'Poppins', sans-serif;",
-    paddingBottom: theme.spacing(8),
+    paddingBottom: theme.spacing(10),
   },
   goDown: {
     color: "#2196F3",
@@ -56,15 +56,15 @@ export default function TagLine() {
       >
         <div className={classes.container}>
           <Typography
-            variant="h2"
+            variant="h3"
             className={classes.title}
             id="tagline"
             gutterBottom
           >
             {" "}
-            CUSTOM KITBASH
+            CUSTOM OUTFIT
             <br />
-            YOUR TOYS
+            YOUR ACTION FIGURES
           </Typography>
           <Typography variant="h5" className={classes.caption}>
             Get this outfit only at caweck custom

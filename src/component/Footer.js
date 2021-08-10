@@ -28,8 +28,8 @@ export default function Footer() {
     <footer position="fixed">
       <Box className={classes.root}>
         <Container>
-          <Typography variant="h6" className={classes.footer}>
-            © 2021 - Caweck Custom
+          <Typography variant="subtitle1" className={classes.footer}>
+            © 2021 Caweck Custom. All rights reserved
           </Typography>
         </Container>
       </Box>

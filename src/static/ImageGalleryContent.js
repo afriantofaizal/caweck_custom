@@ -2,8 +2,8 @@ const ImageGalleryContent = [
   {
     id: 1,
     image: process.env.PUBLIC_URL + "/assets/photo1.jpg",
-    title: "1:12 Scale",
-    description: "Custom outfit figure with 1:12 scale",
+    title: "1:6 Scale",
+    description: "Custom outfit figure with 1:6 scale",
     cols: 2,
   },
   {
@@ -21,15 +21,15 @@ const ImageGalleryContent = [
   {
     id: 4,
     image: process.env.PUBLIC_URL + "/assets/photo4.jpg",
-    title: "1:6 Scale",
-    description: "Custom outfit figure with 1:6 scale",
+    title: "1:12 Scale",
+    description: "Custom outfit figure with 1:12 scale",
     cols: 2,
   },
   {
     id: 5,
     image: process.env.PUBLIC_URL + "/assets/photo5.jpg",
-    title: "Accessories",
-    description: "Miscellaneous accessories outfit",
+    title: "Nendoroid",
+    description: "Custom outfit figure to Nendoroid Doll",
     cols: 2,
   },
   {
